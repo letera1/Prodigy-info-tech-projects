@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stopwatch-container">
+    <h1>Stopwatch</h1>
+    <div id="timer-display">00:00:00.000</div>
+    <div class="controls">
+      <button id="start-btn" class="btn">Start</button>
+      <button id="stop-btn" class="btn" disabled>Stop</button>
+      <button id="reset-btn" class="btn" disabled>Reset</button>
+      <button id="lap-btn" class="btn" disabled>Lap</button>
+    </div>
+    <div id="laps">
+      <h2>Lap Times</h2>
+      <ul id="lap-list"></ul>
+    </div>
+    <div id="theme-toggle">
+      <label for="theme-switch">Dark Mode</label>
+      <input type="checkbox" id="theme-switch">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
